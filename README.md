@@ -6,11 +6,13 @@
 2. The default setting of the color mode in OpenCV comes in the order of BGR, which is different from that of Matplotlib. Therefore to see the image in GRAYSCALE mode, we need to convert it from BGR to GRAYSCALE as follows.
 3. Convert it into a grayscale image
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6450c50-33d3-42f2-89b3-5c0649615efe/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6450c50-33d3-42f2-89b3-5c0649615efe/Untitled.png)
+
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc1.png" width="40%">
 
 original image
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ff5c7f85-2eab-4b0c-88d9-9b753d510ea0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ff5c7f85-2eab-4b0c-88d9-9b753d510ea0/Untitled.png)
+
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc2.png" width="40%">
 
 grayscale image
 
@@ -20,11 +22,12 @@ grayscale image
 - There are several techniques used to achieve blurring effects in OpenCV: Averaging blurring, Gaussian blurring, median blurring and bilateral filtering, **Non-Local Means Denoising**.
     - Types of Blurring
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60902abb-0573-46a0-adc7-e7e01268e6e2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60902abb-0573-46a0-adc7-e7e01268e6e2/Untitled.png)
+
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc3.png" width="40%">
 
 blurring the image 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/95333fce-c01e-45e9-aa75-a0745e4abb04/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/95333fce-c01e-45e9-aa75-a0745e4abb04/Untitled.png)
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc4.png" width="40%">
 
 de-noising the image 
 
@@ -42,9 +45,11 @@ de-noising the image
     - The parameters of adaptive thresholding are maxValue (255), adaptiveMethod , thresholdType , blockSize and C .
     - And the adaptive method here has two kinds: ADAPTIVE_THRESH_MEAN_C , ADAPTIVE_THRESH_GAUSSIAN_C
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8a380078-6b0a-4fe0-8602-62c5a72bcd6a/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8a380078-6b0a-4fe0-8602-62c5a72bcd6a/Untitled.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0fc170f2-a37e-4e2a-b662-3110dafe8bda/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0fc170f2-a37e-4e2a-b662-3110dafe8bda/Untitled.png)
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc5.png" width="40%">
+
+
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc6.png" width="40%">
 
 ## **Edge Detection**
 
@@ -54,13 +59,16 @@ de-noising the image
 
           canny = cv2.Canny(image, threshold1,  threshold2)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a7a201d8-4f93-4818-876d-b8b0ffeaf908/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a7a201d8-4f93-4818-876d-b8b0ffeaf908/Untitled.png)
+
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc7.png" width="40%">
 
 ## Morphological transformations
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ac69658-98b2-41ff-9da2-eeff64b0369c/Screen_Shot_2020-06-17_at_2.01.22_AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5ac69658-98b2-41ff-9da2-eeff64b0369c/Screen_Shot_2020-06-17_at_2.01.22_AM.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f730de3b-2165-4701-a47d-d05107325b36/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f730de3b-2165-4701-a47d-d05107325b36/Untitled.png)
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc8.png" width="40%">
+
+
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc9.png" width="40%">
 
 ## Contour detection
 
@@ -77,7 +85,8 @@ de-noising the image
 
 5. Using cv2.drawContours function draw the contour shape using the  identified contour which has length 4 in this example
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/755bd87a-cd42-494d-8526-4ec4ead18fff/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/755bd87a-cd42-494d-8526-4ec4ead18fff/Untitled.png)
+
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc10.png" width="40%">
 
 ## Affine Transformation
 
@@ -85,14 +94,15 @@ de-noising the image
 - It is used to correct distortions and perspective issues.
 - Affine Transformation helps to modify the geometric structure of the image, preserving parallelism of lines but not the lengths and angles. It preserves collinearity and ratios of distances.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0016a20c-fdfc-49d0-9520-ebb48c0c1681/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0016a20c-fdfc-49d0-9520-ebb48c0c1681/Untitled.png)
+
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc11.png" width="40%">
 
 ## Final Output
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6450c50-33d3-42f2-89b3-5c0649615efe/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6450c50-33d3-42f2-89b3-5c0649615efe/Untitled.png)
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc12.png" width="40%">
 
 original image
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d3b2cad8-9d12-4fc2-a0df-9edddd2eea82/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d3b2cad8-9d12-4fc2-a0df-9edddd2eea82/Untitled.png)
+<img src="https://github.com/ankit-kothari/data_science_journey/blob/master/github_images/sc13.png" width="40%">
 
 scanned image
